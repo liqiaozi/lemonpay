@@ -1,0 +1,31 @@
+pay:
+  #支付宝支付配置(沙箱环境)
+  alipay:
+    gatewayUrl: https://openapi.alipaydev.com/gateway.do
+    appid: 2016091200497004
+    appPrivateKey: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCunyDGBfJt8BbbW/UGXXCHNcL7GJ4mSa7X45hGrGNeIbkN1ddpdn9MEG8PuDQeZbo6MOLhob2eLpiy96f/SLXODBCHm7RfUXZ+KcYZcKKNHtbOZwao85/cZ6eKp+e06RtUhTgwSWlqQR3dL2yICiEuhGDrrHcjWAV0/8eY8c0xdGJ7CHYjAbxTNCnDuMTfL9GNWnhHJyGTIgh5kvUlQYTm08bFt42S3ji1CAqNioBHAiVdrlU2GzAjNSGxD2NVnyfXlwhb92L4giHM9CgUXbqJ0e/TbICjoNIb4thkWwIBtLRM1nOUZeVZo4Qm9MFUfg/mPrZv9xXxuUytcyZdiCkPAgMBAAECggEAS92UxpPk3MC3nXwZOzezYPsJiEAMzcOrc95M1T+mOEpcdNdYLFiwO6LULbcw5Zf6zbdZiv/TOvsxmmeglHfJjQiO0evi9JqW6X9KstjNtpQUbT4zlYmrBX3/O21xbJbuKc1rOQdcBi7eQ6+L7prACc63sQyQAkoGrOtHk3pSVM5qNVryBxawWgKn7EqMjVbpQKcQg0o4B8Q40cyxfmXYtkb0ZLBXAcq1B8ZOK0fgGyq8oQdbSfkkz8+pe6IpmAnMFloATAYuSkGbGHTidQ3KsfkITvkX7P94jzaKD7Acz3I1Jk9gFmksGLCx7YWyw2FSdatmwbLNlMb92oZFCbHfmQKBgQD8Vwz841QZaowQFGhcSmlu5q4K1Jh15RhZA6mi5pGlltN54lg9kT1wfZCc37afVHMscIzuBWCfBCayrkpnRnnoAYHleL6fyFdtOKTCymhWXhv+vpd6iTjxc/K9JYtJSV6lVmMKWpN3Em7F4b24hfNnCX1/gsXjtgM77RqF4k0+WwKBgQCxJ4FhumFxYVeon7FJpOsnMpswum7+F1sX6JYwJnijyDtB0tA3BO4o9tYc5hoMvf1bPFdRsKFnMBS+HqdW3b7eNf9atA0AJJ1GMlOhlTqPpOukbJ3LDwBsIsWPBSRJQ086m/YAWRu2LiHPyrUTiEbC34+pVfV+X2HZrU+qtFUmXQKBgQDA5QKGpnh5XVtoR1Fni3KBVlGg8dcB+HjeQtCAOGUKAfvy5jWyCr6+qR3M7a66qWHJjNgOc4nixNeYK2ew/szdr5lOgzilCA7c7Tn1taiArTwVRjihcRhYatwZ/wM0qKNzHFBlb8veb/bBycivr6XbFAQdXyhK464hNyTZR57olQKBgHAiLHA6tHE7B2xx4JtX64z9KGRYrebhy8Q/ccl6oIQzOub4VNluon2FeJQERlroa5UzhaXsos2ZDpgk+REv/R/UmBTGwS/k/TQwqOUve0jvQETsh5i/nynTfK+Btq01ENJtY/JmdPcFDlvj2GhLq1awgdPS2DiskVhirnnD+d31AoGBAJato0Z+YrAWgirEt5Vuqw6Kvt/qQKsDAqNq2yASYAoMFEzlX0QXnL7upxI6wdOTdNkWjpFyynSdBN5M051atoMBZCmx4viMquPOJGz415y1Mn+VDRuCFn+z6EBhduAzp3c4clJxRFDJn9mc0lj85gPdRJjjprvVA9eF31h9aZzZ
+    alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApOmE1yjTvoPAHfiLu1d242DZg0JCQJkpH3ZlWlNgqdfSjjC9IzsEkI9XsWQr2/DwE7qZ41RfPIdYUpKaKP+NM3SF+FmS/uDUx8pVwk8u2tiwQPpciJ8Ciqb1ZAk9db07RRjV1BY2IoPLDimAuW99bKAwPksweHi3c0YfGTEWUWl9/GxdRlv/5KYZC5PQDGvrGEo74mnHzpkXPahLdKUUrG7odOWTEtuz3FV1UZ3Bfy6su2Jj/ifWCrl1T+DvKasV0JndcjkUlzbVJdMcoYwVkKEm83H8k8suDAxiKrShSdz34AQVsge6GMCGszUMtdR6DJ0Q16/pUSdEiDM0Vhp1CQIDAQAB
+    returnUrl: http://fuzsmc.natappfree.cc/alipay/return   #待修改.
+    notifyUrl: http://fuzsmc.natappfree.cc/alipay/notify   #待修改.
+    format: json
+    charset: UTF-8
+    signType: RSA2
+  # 微信支付配置
+  wxpay:
+    appID: wxab8acb865bb1637e
+    mchID: 11473623
+    key: 2ab9071b06b9f739b950ddb41db2690d
+    sandboxKey: 3639bc1370e105aa65f10cd4fef2a3ef
+    certPath: /var/local/cert/apiclient_cert.p12
+    notifyUrl: http://65ta5j.natappfree.cc/wxpay/refund/notify
+    useSandbox: true
+
+spring:
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+
+
+
+
+
